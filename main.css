@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #EAEAEA;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+header {
+    padding: 16px 0;
+    background-color: #1F1F1F;
+}
+
+section h2, section h3 {
+    color: #FF5733;
+}
+
+header h1 {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+header .container .cor-h1 {
+    background: linear-gradient(to right, #FF5733, #8A2BE2);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 16px;
+}
+
+header nav li a {
+    color: #ff02de;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav li a:hover {
+    background: linear-gradient(to right, #FF5733, #8A2BE2);
+    border-radius: 4px;
+    padding: 6px;
+}
+
+header .nav-bold {
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .container img {
+    margin: 16px 0;
+    display: block;
+}
+
+.social-links img {
+    height: 24px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+#contact .container {
+    display: block;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+.show-more,
+.show-less {
+    display: block;
+    background-color: #FF5733;
+    color: #121212;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.show-more:hover,
+.show-less:hover {
+    background-color: #FF7947;
+}
+
+.hidden-content {
+    display: none;
+}
+
+#show-more-toggle:checked ~ .show-more {
+    display: none;
+}
+
+#show-more-toggle:checked ~ .hidden-content {
+    display: block;
+}
+
+.show-less {
+    display: none;
+}
+
+#show-more-toggle:checked ~ .hidden-content .show-less {
+    display: block;
+}
+
+form input,
+form textarea,
+form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 2px solid #FF5733;
+    background-color: #121212;
+    color: #EAEAEA;
+}
+
+button {
+    background-color: #FF5733;
+    color: #121212;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #FF7947;
+}
+
+section h2, section h3 {
+    margin: 14px 0;
+}
+
+section p {
+    margin-left: 20px;
+    margin-top: 16px; /* Adicionada margem superior */
+    font-family: 'Roboto', sans-serif;
+}
+
+.photo-event {
+    display: block;
+    text-align: center; /* As imagens serão centralizadas */
+}
+
+section .photo-event img {
+    width: 400px;
+    display: inline;
+}
+
+footer {
+    background-color: #1F1F1F;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+
+section .container .contact-methods {
+    display: inline;
+}
